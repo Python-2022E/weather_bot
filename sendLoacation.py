@@ -16,8 +16,8 @@ def get_last_update(updates):
 
 def send_message(TOKEN,chat_id, text):
     button1 = {'text':'Contact','request_contact':True}
-    
-    keyboard = [[button1]]
+    button2 = {'text':'Location','request_location':True}
+    keyboard = [[button1],[button2]]
 
     reply_markup = {'keyboard':keyboard,'resize_keyboard':True}
     data = {
