@@ -37,6 +37,5 @@ last_update = get_last_update(updates)
 chat_id, text, last_message_id = last_update
 
 weather_data = weather_api.get_data_city(key,text)
-weather_text = weather_api.sFormat(weather_data)
 
-send_message(TOKEN,chat_id,weather_text)
+send_message(TOKEN,chat_id,weather_data)
